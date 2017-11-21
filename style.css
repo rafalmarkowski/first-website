@@ -34,7 +34,7 @@ p{
     text-align: justify;
 }
 img{
-    max-height: 100%;
+    max-width: 100%;
     height: auto;
     width: auto;
     margin-bottom: -4px;
@@ -62,8 +62,8 @@ nav{
 }
 #menu-icon{
     display: hidden;
-    width: 40;
-    height: 40;
+    width: 40px;
+    height: 40px;
     background: url(img/ricon.png) center;
 }
 a:hover #menu-icon{
@@ -96,7 +96,7 @@ nav ul li a:hover{
     background-color: #6991AC;
 }
 .banner-inner{
-width: 1100px;
+max-width: 1100px;
 margin: 0 auto;
 }
 .one-fourth{
@@ -211,6 +211,85 @@ footer.second p{
     text-align: center;
 }
 /* Media queries */
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 150%;
+    }
+    h3{
+        font-size: 125%;
+    }
+    p{
+        font-size: 120%;
+    }
+    header{
+        position: absolute;
+    }
+    #logo{
+        margin: 15px 0 20px -25px;
+        transform: scale(0.75, 0.75);
+        
+        background: url(img/ricon.png) center no-repeat;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+    nav ul, nav:active ul{
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 15px;
+        background: #6991AC;
+        right: 20px;
+        top: 60px;
+        border: 1px solid #FFF;
+        border-radius: 25px 2px 25px 2px;
+        width: 30%
+    }
+    nav:hover ul{
+        display: block;
+    }
+    nav li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+    .banner{
+        padding-top: 86px;
+    }
+    .one-fourth{
+        float: left;
+        width: 100%;
+    }
+    .one-fourth i{
+        font-size: 350%;
+        padding: 4% 0 1% 0;
+    }
+    article{
+        width: 100%
+    }
+    aside{
+        width: 100%;
+    }
+    .hand-mobile{
+        display: none;
+    }
+    .one-third{
+        width: 100%;        
+    }
+    .social i{
+        font-size: 180%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
